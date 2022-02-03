@@ -1,0 +1,320 @@
+::-webkit-scrollbar{
+    display: none;
+}
+.z-video{
+    position: fixed;
+    display: grid;
+    width: 100vh;
+    height: 100vw;
+    grid-template-columns: 0vw 3fr;
+    z-index: -1;
+}
+.loopfotos{
+    height: 117vh;
+    animation: vids 0.1s 2s normal forwards;
+}
+@keyframes vids {
+    from{
+        width: 108vw;
+        height: 117vh;
+    }
+    to{
+        height: 100vh;
+        width: 100vw;
+    }
+    
+}
+.movile-bk{
+    position: absolute;
+    display: grid;
+    width: 100vh;
+    height: 100vw;
+    grid-template-columns: 0vw 3fr;
+}
+.ps-images{
+    width: 100vw;
+    height: 100vh;
+}
+.im-up{
+    grid-area: 1/1;
+    animation: z-up 2s ease-in-out forwards;
+    position: absolute;
+}
+@keyframes z-up {
+    from{top: -100vh;}
+    to{top: 0vh;}
+    
+}
+.im-back{
+    grid-area: 1/1;
+    width: 100vw;
+    height: 100vh;
+    animation: z-dow 2s 0.6s normal forwards;
+    position: absolute;
+    top: 47vh;
+}
+@keyframes z-dow {
+    from{top: 47vh;}
+    to{top: 0vh;}
+    
+}
+.im-hand{
+    grid-area: 1/1;
+    animation: z-hand 2s ease-in-out forwards;
+    position: absolute;
+}
+@keyframes z-hand {
+    from{left: -300vh;}
+    to{left: 0vh;}
+}
+.im-phone{
+    grid-area: 1/1;
+    width: 60vw;
+    height: 101vh;
+    z-index: 1;
+    animation: z-phone 2s ease-in-out forwards;
+}
+@keyframes z-phone {
+    from{padding-left: 200vw;}
+    to{padding-left: 20vw;}
+    
+}
+.letter{
+    color: white;
+}
+.lt1{
+    position: absolute;
+    left: 38vw;
+    top: 20vh;
+    font-size: 3vw;
+    visibility: hidden;
+    animation: anlet 0s 2s normal forwards;
+}
+.lt2{
+    position: absolute;
+    left: 41.5vw;
+    top: 20vh;
+    font-size: 3vw;
+    visibility: hidden;
+    animation: anlet 0s 2.1s normal forwards;
+}
+.lt3{
+    position: absolute;
+    left: 44vw;
+    top: 20vh;
+    font-size: 3vw;
+    visibility: hidden;
+    animation: anlet 0s 2.2s normal forwards;
+}
+.lt4{
+    position: absolute;
+    left: 46.5vw;
+    top: 20vh;
+    font-size: 3vw;
+    visibility: hidden;
+    animation: anlet 0s 2.3s normal forwards;
+}
+.lt5{
+    position: absolute;
+    left: 49.5vw;
+    top: 20vh;
+    font-size: 3vw;
+    visibility: hidden;
+    animation: anlet 0s 2.4s normal forwards;
+}
+
+.lt6{
+    position: absolute;
+    left: 52.5vw;
+    top: 20vh;
+    font-size: 3vw;
+    visibility: hidden;
+    animation: anlet 0s 2.5s normal forwards;
+}
+.lt7{
+    position: absolute;
+    left: 55.5vw;
+    top: 20vh;
+    font-size: 3vw;
+    visibility: hidden;
+    animation: anlet 0s 2.6s normal forwards;
+}
+.lt8{
+    position: absolute;
+    left: 58.5vw;
+    top: 20vh;
+    font-size: 3vw;
+    visibility: hidden;
+    animation: anlet 0s 2.7s normal forwards;
+}
+.lt9{
+    position: absolute;
+    left: 44.8vw;
+    top: 37vh;
+    font-size: 3vw;
+    visibility: hidden;
+    animation: anlet 0s 2.2s normal forwards;
+}
+.lt10{
+    position: absolute;
+    left: 47.4vw;
+    top: 37vh;
+    font-size: 3vw;
+    visibility: hidden;
+    animation: anlet 0s 2.3s normal forwards;
+}
+.lt11{
+    position: absolute;
+    left: 41vw;
+    top: 53vh;
+    font-size: 3vw;
+    visibility: hidden;
+    animation: anlet 0s 2.1s normal forwards;
+}
+.lt12{
+    position: absolute;
+    left: 45vw;
+    top: 53vh;
+    font-size: 3vw;
+    visibility: hidden;
+    animation: anlet 0s 2.2s normal forwards;
+}
+.lt13{
+    position: absolute;
+    left: 48.5vw;
+    top: 53vh;
+    font-size: 3vw;
+    visibility: hidden;
+    animation: anlet 0s 2.3s normal forwards;
+}
+.lt14{
+    position: absolute;
+    left: 52vw;
+    top: 53vh;
+    font-size: 3vw;
+    visibility: hidden;
+    animation: anlet 0s 2.4s normal forwards;
+}
+.lt15{
+    position: absolute;
+    left: 55vw;
+    top: 53vh;
+    font-size: 3vw;
+    visibility: hidden;
+    animation: anlet 0s 2.5s normal forwards;
+}
+.lt1r{
+    position: absolute;
+    left: 50.5vw;
+    top: 37vh;
+    font-size: 3vw;
+    visibility: hidden;
+    animation: anlet 0s 2.4s normal forwards;
+}
+@keyframes anlet {
+    from{ visibility: hidden;}
+    to{visibility: visible;}
+    
+}
+.pd-zone{
+    width: 100vw;
+    height: 101vh;
+    background-image: url(img/fondo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 107vh;
+}   
+.description{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 50vW;
+    grid-template-rows: 50vh;
+}
+.title{
+    color: white;
+    justify-self: center;
+    align-self: end;
+    font-size: 5vw;
+}
+.mvdesc{
+    color: white;
+    justify-self: center;
+    text-align: justify;
+    width: 43vw;
+    font-size: 2vw;
+}
+.ph-1{
+    position: absolute;
+    left: 60vw;
+    top: 16vh;
+}
+.ph-blop1{
+    z-index: 1;
+}
+.ph-blop2{
+    position: absolute;
+    animation: blopan 5s ease-in-out infinite;
+}
+@keyframes blopan {
+    0%{
+        top: 30vh;
+    }
+    50%{
+        top: 35vh;
+    }
+    100%{
+        top: 30vh;
+    }
+}
+.pr-tipe{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    background-image: url(img/bac-tipe.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 21;
+    color: white;
+    position: absolute;
+    top: 208vh;
+}
+
+.ph-tip1{
+    align-self: end;
+    justify-self: center;
+    z-index: 11;
+    grid-area: 1 / 1;
+    padding-top: 24vh !important;
+}
+.ph-tip2{
+    align-self: end;
+    justify-self: center;
+    z-index: 11;
+    grid-area: 1 / 2;
+}
+.ph-tip3{
+    width: 8vw !important;
+    height: 38vh;
+    grid-area: 1 / 3;
+    align-self: end;
+    justify-self: center;
+    z-index: 11;;
+}
+.node{
+    justify-self: center;
+    font-size: 4vw;
+}
+.men{
+    width: 22vh;
+}
+.MENTION{
+    z-index: 1;
+    position: absolute;
+    color: white;
+    font-size: 2vw;
+    padding-left: 3vh;
+
+}
